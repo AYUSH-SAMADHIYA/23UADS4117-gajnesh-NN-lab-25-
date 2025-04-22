@@ -12,40 +12,40 @@ Loss Function: Cross-Entropy Loss
 
 Optimizer: Adam (learning rate = 0.001)
 
-Description of Code:
+## Description of Code:
 Libraries Used: PyTorch, Torchvision, Matplotlib
 
-Dataset Handling:
+### Dataset Handling:
 Images are loaded from a directory structure with train and val subfolders.
 Data augmentation (e.g., random horizontal flip) and normalization are applied.
 
-Model Definition:
+### Model Definition:
 A pretrained ResNet-18 model is loaded.
 The final FC layer is modified to output predictions based on the number of classes in the dataset.
 
-Training Loop:
+### Training Loop:
 Training is done for 10 epochs.
 Tracks training and validation loss and accuracy.
 Best-performing model on the validation set is saved.
 
-Visualization:
+### Visualization:
 A loss curve is plotted at the end of training to visualize training progress.
 
 
 
-Performance Evaluation:
-Training & Validation Metrics:
+## Performance Evaluation:
+### Training & Validation Metrics:
 
 Accuracy and loss are printed for both training and validation phases across epochs.
 The best model is selected based on highest validation accuracy.
 
-Visualization:
+### Visualization:
 
 A loss curve is generated to track the decrease in loss over training epochs
 Actual performance metrics (accuracy, loss) may vary depending on the dataset quality and number of samples.
 
 
-My Comments:
+## My Comments:
 
 The modular structure of the training function makes it easy to extend and experiment with different models or training strategies.
 
