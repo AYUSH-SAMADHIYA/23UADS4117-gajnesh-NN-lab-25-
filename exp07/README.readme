@@ -1,7 +1,7 @@
-Objective:
+## Objective:
 The objective of this project is to develop a deep learning model capable of classifying medical images into different categories using a transfer learning approach with a pretrained ResNet-18 model.
 
-Description of Model:
+## Description of Model:
 This project utilizes ResNet18, a convolutional neural network architecture pretrained on the ImageNet dataset. The model is fine-tuned by replacing its final fully connected layer to match the number of classes in the provided medical dataset.
 
 Backbone: ResNet18 (pretrained)
